@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+    }
+   body{
+    background: black;
+    overflow-x: hidden;
+   }
+   .master{
+    display: grid;
+   }
+   .img{
+    height: 31em;
+    width: 100vw;
+    position: absolute;
+    background-size:cover ;
+   }
+   .container0{
+   display: grid;
+   place-content: center;
+   }
+   .card{
+    background:black;
+    height: 13em;
+    width: 13em;
+    position: relative;
+    border-radius:50% ;
+    margin-top: 18em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+   .card::after{
+    content: "";
+    height: 11em;
+    width: 11em;
+    border: 4px solid rgb(0, 0, 0);
+    border-radius:50% ;
+    border-top-color:white ;
+    animation: kali 0.75s ease infinite forwards;
+   }
+   .card1{
+    color: orange;
+    position: absolute;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+   }
+   @keyframes kali {
+        to{
+            transform: rotate(1turn);
+        }
+        from{
+            transform: rotate(0turn);
+        }
+   }
+   .letter{
+    color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transform: translate(1em,1em);
+    font-size: 2em;
+   }
+   .container1{
+    display: grid;
+    place-content: center;
+   }
+   .lo{
+    transform: translate(0em,3em);
+    color:rgb(177, 172, 172);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   }
+   .media{
+    display: grid;
+    place-content: center;
+    background:black;
+    height: 6em;
+    width: 34em;
+    border-radius: 5em;
+    transform: translate(5em,8em);
+    box-shadow: 2em 2em 6em solid white;
+   }
+   .media1{
+    height: 3.2em;
+    width: 3.2em;
+    border-radius: 50%;
+    margin-bottom: -6em;
+    cursor: pointer;
+   }
+   .media2{
+    height: 3.2em;
+    width: 3.2em;
+    margin-left: 6em;
+    border-radius: 50%;
+    cursor: pointer;
+   }
+   .media3{
+    height: 3.2em;
+    width: 3.2em;
+    margin-left: 13em;
+    margin-top: -3.1em;
+    border-radius: 50%;
+    cursor: pointer;
+   }
+   .media4{
+    height: 3.2em;
+    width: 3.2em;
+    margin-left: 19em;
+    margin-top: -3.1em;
+    border-radius: 50%;
+    cursor: pointer;
+   }
+   .media5{
+    height: 3.2em;
+    width: 3.2em;
+    margin-left: 26em;
+    margin-top: -3.1em;
+    border-radius: 50%;
+    cursor: pointer;
+   }
+   .follow{
+    color: orange;
+    place-self: center;
+
+   }
+   .br{
+    display: grid;
+    place-content: center;
+    transform: translate(3em,0em);
+   }
+  
+   @media screen and (width < 1000px) {
+    .master{
+        display: grid;
+    }
+    .media{
+    display: grid;
+    place-content: center;
+    background:black;
+    height: 6em;
+    width: 34em;
+    border-radius: 5em;
+    /* transform: translate(6.5em,11em); */
+    box-shadow: 2em 2em 6em solid white;
+   }
+    .img{
+    height: 31em;
+    width: 176vw;
+    position: absolute;
+    background-size:cover ;
+    overflow-x:hidden ;
+   }
+   .card{
+    background:black;
+    height: 13em;
+    width: 13em;
+    position: relative;
+    border-radius:50% ;
+    margin-top: 18em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* transform: translate(5em,0em); */
+   }
+   .letter{
+    color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* transform: translate(3em,1em); */
+    font-size: 2em;
+   }
+   .lo{
+    /* transform: translate(5em,3em); */
+    color:rgb(177, 172, 172);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   }
+   }
+   @media screen and (min-width: 768px) {
+    .master{
+        display: grid;
+    }
+    .card{
+    background:black;
+    height: 13em;
+    width: 13em;
+    position: relative;
+    border-radius:50% ;
+    margin-top: 18em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+   }
+</style>
+<body>
+ <main class="master">
+    <div class="container0">
+        <img src="ai-generate.jpg" alt="" class="img">
+        <div class="card">
+            <div class="card1">
+                <strong><b>Loading...</b></strong>
+            </div>
+        </div>
+        <div class="letter">
+            <strong><b>Hoot Coin</b></strong>
+        </div>
+    </div><br><br>
+    <div class="container1">
+         <div class="lo">
+            <strong><b><p class="br">Welcome to Hoot Coin,your trusted partner for efficient and profitable minig operations.<br> let's dig in and maximize your yields<br></p></b></strong>
+        </div>
+        <div class="media">
+            <h1 class="follow">Follow us on social media</h1><br>
+            <img src="twitter-x.webp" alt="" class="media1">
+        <img src="facebook.png" alt="" class="media2">
+        <img src="Youtube.png" alt="" class="media3">
+        <img src="R.jpg" alt="" class="media4">
+        <img src="telegram.webp" alt="" class="media5">
+    </div>
+    </div>
+ </main>
+</body>
+        <script>
+           
+          
+        </script>
+</html>
